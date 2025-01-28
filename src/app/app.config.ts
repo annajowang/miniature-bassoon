@@ -11,12 +11,6 @@ import { provideRouter } from '@angular/router';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore()),
-    provideAuth(() => getAuth()),
-    provideFunctions(() => getFunctions()),
-    provideStorage(() => getStorage()),
-    provideMessaging(() => getMessaging()),
-    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"friendlybugs-ed0f8","appId":"1:680911224639:web:7729714235215c08c59d8a","storageBucket":"friendlybugs-ed0f8.firebasestorage.app","apiKey":"AIzaSyCwbBoUjWbGyRasxOhWHyH8Q-bOXaauvOM","authDomain":"friendlybugs-ed0f8.firebaseapp.com","messagingSenderId":"680911224639","measurementId":"G-SBTW9JMNS7"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
+    provideFirebaseApp(() => initializeApp({"projectId":"friendlybugs-ed0f8","appId":"1:680911224639:web:7729714235215c08c59d8a","storageBucket":"friendlybugs-ed0f8.firebasestorage.app","apiKey":"AIzaSyCwbBoUjWbGyRasxOhWHyH8Q-bOXaauvOM","authDomain":"friendlybugs-ed0f8.firebaseapp.com","messagingSenderId":"680911224639","measurementId":"G-SBTW9JMNS7"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
